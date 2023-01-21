@@ -117,4 +117,110 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Artist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artist_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Artist_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BGA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BgTile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BgTile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_anger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_anger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_anger2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_anger2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_fear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_fear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_fear2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_fear2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_love" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_love.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_love2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_love2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_sleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_sleep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="em_sleep2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\em_sleep2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EventBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EventBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ev_bitcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ev_bitcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ev_crapcoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ev_crapcoin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ev_creeper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ev_creeper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ev_mugged" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ev_mugged.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExecA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExecA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExecA_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExecA_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExecB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExecB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExecB_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExecB_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Farmer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Farmer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Farmer_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Farmer_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jogger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jogger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jogger_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jogger_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kitten" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kitten.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kitten_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kitten_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linux" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linux.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Linux_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Linux_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sarge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sarge_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sarge_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scat_Bop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scat_Bop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

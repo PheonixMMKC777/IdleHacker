@@ -54,6 +54,7 @@
             this.CashCounterLabel = new System.Windows.Forms.Label();
             this.HowToPlayLabel = new System.Windows.Forms.Label();
             this.EventBox = new System.Windows.Forms.PictureBox();
+            this.EmotionBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.NPC1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NPC2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NPC3)).BeginInit();
@@ -65,11 +66,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.NPC7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NPC8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EventBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmotionBox)).BeginInit();
             this.SuspendLayout();
             // 
             // NPC1
             // 
-            this.NPC1.Image = ((System.Drawing.Image)(resources.GetObject("NPC1.Image")));
+            this.NPC1.Image = global::IdleHacker.Properties.Resources.Artist;
             this.NPC1.Location = new System.Drawing.Point(20, 20);
             this.NPC1.Name = "NPC1";
             this.NPC1.Size = new System.Drawing.Size(97, 145);
@@ -77,94 +79,106 @@
             this.NPC1.TabStop = false;
             this.NPC1.Visible = false;
             this.NPC1.Click += new System.EventHandler(this.NPC1_Click);
+            this.NPC1.BackColor = Color.Transparent;
             // 
             // NPC2
             // 
-            this.NPC2.Image = ((System.Drawing.Image)(resources.GetObject("NPC2.Image")));
+            this.NPC2.Image = global::IdleHacker.Properties.Resources.Black;
             this.NPC2.Location = new System.Drawing.Point(220, 20);
             this.NPC2.Name = "NPC2";
             this.NPC2.Size = new System.Drawing.Size(97, 145);
             this.NPC2.TabIndex = 1;
             this.NPC2.TabStop = false;
             this.NPC2.Visible = false;
+            this.NPC2.BackColor = Color.Transparent;
             // 
             // NPC3
             // 
-            this.NPC3.Image = ((System.Drawing.Image)(resources.GetObject("NPC3.Image")));
+            this.NPC3.Image = global::IdleHacker.Properties.Resources.Scat;
             this.NPC3.Location = new System.Drawing.Point(340, 20);
             this.NPC3.Name = "NPC3";
             this.NPC3.Size = new System.Drawing.Size(97, 145);
             this.NPC3.TabIndex = 2;
             this.NPC3.TabStop = false;
             this.NPC3.Visible = false;
+            this.NPC3.BackColor = Color.Transparent;
             // 
             // NPC6
             // 
-            this.NPC6.Image = ((System.Drawing.Image)(resources.GetObject("NPC6.Image")));
+            this.NPC6.Image = global::IdleHacker.Properties.Resources.Kitten;
             this.NPC6.Location = new System.Drawing.Point(340, 220);
             this.NPC6.Name = "NPC6";
             this.NPC6.Size = new System.Drawing.Size(97, 145);
             this.NPC6.TabIndex = 5;
             this.NPC6.TabStop = false;
             this.NPC6.Visible = false;
+            this.NPC6.BackColor = Color.Transparent;
             // 
             // NPC5
             // 
-            this.NPC5.Image = ((System.Drawing.Image)(resources.GetObject("NPC5.Image")));
+            this.NPC5.Image = global::IdleHacker.Properties.Resources.Linux;
             this.NPC5.Location = new System.Drawing.Point(220, 220);
             this.NPC5.Name = "NPC5";
             this.NPC5.Size = new System.Drawing.Size(97, 145);
             this.NPC5.TabIndex = 4;
             this.NPC5.TabStop = false;
             this.NPC5.Visible = false;
+            this.NPC5.BackColor = Color.Transparent;
             // 
             // NPC4
             // 
-            this.NPC4.Image = ((System.Drawing.Image)(resources.GetObject("NPC4.Image")));
+            this.NPC4.Image = global::IdleHacker.Properties.Resources.Farmer;
             this.NPC4.Location = new System.Drawing.Point(20, 220);
             this.NPC4.Name = "NPC4";
             this.NPC4.Size = new System.Drawing.Size(97, 145);
             this.NPC4.TabIndex = 3;
             this.NPC4.TabStop = false;
             this.NPC4.Visible = false;
+            this.NPC4.BackColor = Color.Transparent;
             // 
             // ExecA
             // 
-            this.ExecA.Image = ((System.Drawing.Image)(resources.GetObject("ExecA.Image")));
+            this.ExecA.Image = global::IdleHacker.Properties.Resources.ExecA;
             this.ExecA.Location = new System.Drawing.Point(45, 408);
             this.ExecA.Name = "ExecA";
             this.ExecA.Size = new System.Drawing.Size(204, 145);
             this.ExecA.TabIndex = 6;
             this.ExecA.TabStop = false;
+            this.ExecA.Click += PlayerWantsMoney;
+            this.ExecA.BackColor = Color.Transparent;
             // 
             // Exec2
             // 
-            this.Exec2.Image = ((System.Drawing.Image)(resources.GetObject("Exec2.Image")));
+            this.Exec2.Image = global::IdleHacker.Properties.Resources.ExecB;
             this.Exec2.Location = new System.Drawing.Point(371, 408);
             this.Exec2.Name = "Exec2";
             this.Exec2.Size = new System.Drawing.Size(204, 145);
             this.Exec2.TabIndex = 7;
             this.Exec2.TabStop = false;
+            this.Exec2.Click += PlayerWantsMoney;
+            this.Exec2.BackColor = Color.Transparent;
             // 
             // NPC7
             // 
-            this.NPC7.Image = ((System.Drawing.Image)(resources.GetObject("NPC7.Image")));
+            this.NPC7.Image = global::IdleHacker.Properties.Resources.Jogger;
             this.NPC7.Location = new System.Drawing.Point(540, 20);
             this.NPC7.Name = "NPC7";
             this.NPC7.Size = new System.Drawing.Size(97, 145);
             this.NPC7.TabIndex = 8;
             this.NPC7.TabStop = false;
             this.NPC7.Visible = false;
+            this.NPC7.BackColor = Color.Transparent;
             // 
             // NPC8
             // 
-            this.NPC8.Image = ((System.Drawing.Image)(resources.GetObject("NPC8.Image")));
+            this.NPC8.Image = global::IdleHacker.Properties.Resources.Sarge;
             this.NPC8.Location = new System.Drawing.Point(540, 220);
             this.NPC8.Name = "NPC8";
             this.NPC8.Size = new System.Drawing.Size(97, 145);
             this.NPC8.TabIndex = 9;
             this.NPC8.TabStop = false;
             this.NPC8.Visible = false;
+            this.NPC8.BackColor = Color.Transparent;
             // 
             // NPC1Label
             // 
@@ -175,6 +189,8 @@
             this.NPC1Label.TabIndex = 10;
             this.NPC1Label.Text = "Derrick";
             this.NPC1Label.Visible = false;
+            this.NPC1Label.BackColor = Color.Goldenrod;
+            this.NPC1Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC4Label
             // 
@@ -185,6 +201,8 @@
             this.NPC4Label.TabIndex = 11;
             this.NPC4Label.Text = "Miller";
             this.NPC4Label.Visible = false;
+            this.NPC4Label.BackColor = Color.Goldenrod;
+            this.NPC4Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC5Label
             // 
@@ -195,6 +213,8 @@
             this.NPC5Label.TabIndex = 12;
             this.NPC5Label.Text = "Zach";
             this.NPC5Label.Visible = false;
+            this.NPC5Label.BackColor = Color.Goldenrod;
+            this.NPC5Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC8Label
             // 
@@ -205,6 +225,8 @@
             this.NPC8Label.TabIndex = 13;
             this.NPC8Label.Text = "Srgt. Stupid";
             this.NPC8Label.Visible = false;
+            this.NPC8Label.BackColor = Color.Goldenrod;
+            this.NPC8Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC2Label
             // 
@@ -215,6 +237,8 @@
             this.NPC2Label.TabIndex = 14;
             this.NPC2Label.Text = "De\'Andre";
             this.NPC2Label.Visible = false;
+            this.NPC2Label.BackColor = Color.Goldenrod;
+            this.NPC2Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC3Label
             // 
@@ -225,6 +249,8 @@
             this.NPC3Label.TabIndex = 15;
             this.NPC3Label.Text = "Sam";
             this.NPC3Label.Visible = false;
+            this.NPC3Label.BackColor = Color.Goldenrod;
+            this.NPC3Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC7Label
             // 
@@ -235,6 +261,8 @@
             this.NPC7Label.TabIndex = 16;
             this.NPC7Label.Text = "Micheal";
             this.NPC7Label.Visible = false;
+            this.NPC7Label.BackColor = Color.Goldenrod;
+            this.NPC7Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPC6Label
             // 
@@ -245,6 +273,8 @@
             this.NPC6Label.TabIndex = 17;
             this.NPC6Label.Text = "Rose";
             this.NPC6Label.Visible = false;
+            this.NPC6Label.BackColor = Color.Goldenrod;
+            this.NPC6Label.BorderStyle = BorderStyle.FixedSingle;
             // 
             // NPCPurchaseListbox
             // 
@@ -263,6 +293,8 @@
             this.NPCPurchaseListbox.Name = "NPCPurchaseListbox";
             this.NPCPurchaseListbox.Size = new System.Drawing.Size(66, 124);
             this.NPCPurchaseListbox.TabIndex = 18;
+            this.NPCPurchaseListbox.BackColor = Color.Goldenrod;
+
             // 
             // ForHireLabel
             // 
@@ -272,6 +304,8 @@
             this.ForHireLabel.Size = new System.Drawing.Size(55, 15);
             this.ForHireLabel.TabIndex = 19;
             this.ForHireLabel.Text = "For HIRE:";
+            this.ForHireLabel.BackColor = Color.Goldenrod;
+            this.ForHireLabel.BorderStyle = BorderStyle.FixedSingle;
             // 
             // PriceForHireLabel
             // 
@@ -281,6 +315,8 @@
             this.PriceForHireLabel.Size = new System.Drawing.Size(44, 15);
             this.PriceForHireLabel.TabIndex = 20;
             this.PriceForHireLabel.Text = "$: FREE";
+            this.PriceForHireLabel.BackColor = Color.Goldenrod;
+            this.PriceForHireLabel.BorderStyle = BorderStyle.FixedSingle;
             // 
             // BuyNPCBTN
             // 
@@ -291,6 +327,7 @@
             this.BuyNPCBTN.Text = "Hire!";
             this.BuyNPCBTN.UseVisualStyleBackColor = true;
             this.BuyNPCBTN.Click += new System.EventHandler(this.BuyNPCBTN_Click);
+            this.BuyNPCBTN.BackColor = Color.Goldenrod;
             // 
             // CashCounterLabel
             // 
@@ -300,6 +337,8 @@
             this.CashCounterLabel.Size = new System.Drawing.Size(108, 15);
             this.CashCounterLabel.TabIndex = 22;
             this.CashCounterLabel.Text = "Cash: $ moneyhere";
+            this.CashCounterLabel.BackColor = Color.Goldenrod;
+            this.CashCounterLabel.BorderStyle = BorderStyle.FixedSingle;
             // 
             // HowToPlayLabel
             // 
@@ -308,7 +347,10 @@
             this.HowToPlayLabel.Name = "HowToPlayLabel";
             this.HowToPlayLabel.Size = new System.Drawing.Size(102, 15);
             this.HowToPlayLabel.TabIndex = 23;
-            this.HowToPlayLabel.Text = "Push \"A\" or \"5\" !!!!";
+            this.HowToPlayLabel.Text = "<----[CLICK]---->";
+            this.HowToPlayLabel.BackColor = Color.Goldenrod;
+            this.HowToPlayLabel.BorderStyle = BorderStyle.FixedSingle;
+
             // 
             // EventBox
             // 
@@ -318,12 +360,27 @@
             this.EventBox.Size = new System.Drawing.Size(144, 144);
             this.EventBox.TabIndex = 24;
             this.EventBox.TabStop = false;
+            this.EventBox.BackColor = Color.Transparent;
+            // 
+            // EmotionBox
+            // 
+            this.EmotionBox.Image = ((System.Drawing.Image)(resources.GetObject("EmotionBox.Image")));
+            this.EmotionBox.Location = new System.Drawing.Point(643, 220);
+            this.EmotionBox.Name = "EmotionBox";
+            this.EmotionBox.Size = new System.Drawing.Size(64, 64);
+            this.EmotionBox.TabIndex = 25;
+            this.EmotionBox.TabStop = false;
+            this.EmotionBox.BackColor = Color.Transparent;
+
             // 
             // Form1
             // 
+            this.BackgroundImage = global::IdleHacker.Properties.Resources.BgTile;
+            this.BackgroundImageLayout = ImageLayout.Tile;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 633);
+            this.Controls.Add(this.EmotionBox);
             this.Controls.Add(this.EventBox);
             this.Controls.Add(this.HowToPlayLabel);
             this.Controls.Add(this.CashCounterLabel);
@@ -364,6 +421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NPC7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NPC8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EventBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmotionBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,6 +454,7 @@
         private Label CashCounterLabel;
         private Label HowToPlayLabel;
         private PictureBox EventBox;
+        private PictureBox EmotionBox;
     }
 }
 

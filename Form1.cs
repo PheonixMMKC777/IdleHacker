@@ -1,3 +1,5 @@
+using System.Reflection.Metadata;
+
 namespace IdleHacker
 {
     public partial class Form1 : Form
@@ -193,8 +195,9 @@ namespace IdleHacker
 
             this.CashCounterLabel.Text = ("Cash: " + PRG.PlayerCash);
 
-            PRG.EventTimer.Interval = 500000;
+            PRG.EventTimer.Interval = 7000;
             PRG.EventTimer.Tick += EventTrigger;
+            PRG.EventTimer.Start();
 
             PRG.DerrickTimer.Interval = 5000; //17
             PRG.DerrickTimer.Tick += DerrickSold;
@@ -223,6 +226,113 @@ namespace IdleHacker
             PRG.SargeTimer.Interval = 18000; //30
             PRG.SargeTimer.Tick += SargeSold;
 
+
+            PRG.BopTimer.Interval = 380;
+            PRG.BopTimer.Tick += DoTheBop;
+            PRG.BopTimer.Start();
+        }
+
+        void DoTheBop(object sender, EventArgs e)
+        {
+
+            if (PRG.DerrickOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC1.Image = global::IdleHacker.Properties.Resources.Artist_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC1.Image = global::IdleHacker.Properties.Resources.Artist;
+                }
+            }
+
+            if (PRG.DeAndreOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC2.Image = global::IdleHacker.Properties.Resources.Black_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC2.Image = global::IdleHacker.Properties.Resources.Black;
+                }
+            }
+
+            if (PRG.SamOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC3.Image = global::IdleHacker.Properties.Resources.Scat_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC3.Image = global::IdleHacker.Properties.Resources.Scat;
+                }
+            }
+
+            if (PRG.MichealOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC7.Image = global::IdleHacker.Properties.Resources.Jogger_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC7.Image = global::IdleHacker.Properties.Resources.Jogger;
+                }
+            }
+
+            if (PRG.MillerOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC4.Image = global::IdleHacker.Properties.Resources.Farmer_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC4.Image = global::IdleHacker.Properties.Resources.Farmer;
+                }
+            }
+
+            if (PRG.ZackOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC5.Image = global::IdleHacker.Properties.Resources.Linux_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC5.Image = global::IdleHacker.Properties.Resources.Linux;
+                }
+            }
+
+            if (PRG.RoseOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC6.Image = global::IdleHacker.Properties.Resources.Kitten_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC6.Image = global::IdleHacker.Properties.Resources.Kitten;
+                }
+            }
+
+
+            if (PRG.SargeOwned == true)
+            {
+                if (PRG.Bopping == false)
+                {
+                    this.NPC8.Image = global::IdleHacker.Properties.Resources.Sarge_Bop;
+                }
+                if (PRG.Bopping == true)
+                {
+                    this.NPC8.Image = global::IdleHacker.Properties.Resources.Sarge;
+                }
+            }
+
+            PRG.Bopping = !PRG.Bopping;
         }
 
         void DerrickSold(object sender, EventArgs e)
@@ -315,23 +425,84 @@ namespace IdleHacker
 
         void EventTrigger(object sender, EventArgs e)
         {
+            this.Text = "Event Triggered";
             int SelEvent = PRG.rand.Next(0, PRG.EventTotal);
             
             if (SelEvent == 1)
             {
-               
-                //do creeper
+               this.EventBox.Image = global::IdleHacker.Properties.Resources.ev_bitcoin;
+              
             }
 
+            if (SelEvent == 2)
+            {
+                this.EventBox.Image = global::IdleHacker.Properties.Resources.ev_crapcoin;
 
+            }
 
         }
-        void PlayerWantsMoney (object sender, KeyEventArgs e)
+
+
+
+        void PlayerWantsMoney (object sender, EventArgs e) 
         {
-            if (e.KeyCode == Keys.A || e.KeyCode == Keys.NumPad5)
-            {
+
                 PRG.PlayerCash = PRG.PlayerCash + PRG.PlayerWorth;
-            }
+            //make some idefntifier
+            PRG.P1Presses++;
+            PRG.P2Presses++;
+                
+                if (PRG.P1Presses >= 2)
+                {
+                    if (PRG.P1Bopping == false)
+                    {
+                        this.ExecA.Image = global::IdleHacker.Properties.Resources.ExecA_Bop;
+                
+                   
+                    }
+                    if (PRG.P1Bopping == true)
+                    {
+                        this.ExecA.Image = global::IdleHacker.Properties.Resources.ExecA;
+                  
+                    }
+
+                    PRG.P1Presses = 0;
+                    PRG.P1Bopping = !PRG.P1Bopping;
+
+                    
+                }
+
+                if (PRG.P2Presses >= 2)
+                {
+                    if (PRG.P2Bopping == true)
+                    {
+                        this.Exec2.Image = global::IdleHacker.Properties.Resources.ExecB_Bop;
+                        this.Exec2.Invalidate();
+                    }
+                    if (PRG.P2Bopping == false)
+                    {
+                        this.Exec2.Image = global::IdleHacker.Properties.Resources.ExecB;
+                        this.Exec2.Invalidate();
+                    }
+
+                    PRG.P2Presses = 0;
+                    PRG.P2Bopping = !PRG.P2Bopping;
+                }
+
+
+                if (PRG.TotalClicks == 100)
+                {
+                PRG.PlayerWorth = PRG.PlayerWorth + 6;
+                }
+
+                if (PRG.TotalClicks == 250)
+                {
+                    PRG.PlayerWorth = PRG.PlayerWorth + 12;
+                }
+
+            this.CashCounterLabel.Text = "Cash: $" + PRG.PlayerCash;
+            this.CashCounterLabel.Invalidate();
+
         } // this is player hitting button to self gen cash
 
         void GainCash()
@@ -365,6 +536,16 @@ namespace IdleHacker
         public static int TotalHires = 0;
         public static int NextSalePrice = 0;
         public static int EventTotal = 2;
+
+        public static System.Windows.Forms.Timer EmotionTimer = new System.Windows.Forms.Timer();
+        public static System.Windows.Forms.Timer BopTimer = new System.Windows.Forms.Timer();
+        public static bool Bopping = false;
+        public static bool P1Bopping = false;
+        public static bool P2Bopping = false;
+        public static int P1Presses = 0;
+        public static int P2Presses = 0;
+        public static int TotalClicks = 0;
+
         public static Random rand = new Random();
 
         public static bool DerrickOwned = false;
